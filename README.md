@@ -1,0 +1,1 @@
+- require `node`, `python`, `ripgrep`, and `nerd fonts`

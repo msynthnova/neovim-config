@@ -9,4 +9,9 @@ require("colorizer").setup({
         mode = "virtualtext",
         virtualtext = "■",
     },
+    filetypes = {
+        "*",
+        "!prompt",
+        "!popup",
+    },
 })

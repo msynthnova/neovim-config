@@ -12,9 +12,10 @@ require("mason-tool-installer").setup({
         "bash-language-server",
         "clangd",
         "pyright",
+        "html-lsp",
 
         "stylua",
-        "prettierd",
+        "prettier",
         "shfmt",
         "clang-format",
         "black",

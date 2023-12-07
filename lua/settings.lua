@@ -1,0 +1,12 @@
+vim.opt.scrolloff = 6
+vim.opt.sidescrolloff = 6
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.cursorline = true
+vim.opt.number = true
+vim.opt.undofile = true
+vim.opt.wrap = false
+vim.opt.clipboard = "unnamedplus"
+vim.opt.signcolumn = "yes"
+vim.opt.termguicolors = true

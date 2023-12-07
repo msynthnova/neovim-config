@@ -1,9 +1,6 @@
-require("tokyonight").setup(
-{
-  style = "moon",
-  transparent = true,
-}
+require("tokyonight").setup({
+    style = "moon",
+    transparent = true,
+})
 
-)
-
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd([[colorscheme tokyonight]])

@@ -1,6 +1,7 @@
 local lspconfig = require("lspconfig")
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
+local clang_capabilities = capabilities.offsetEncoding == { "utf-16" }
 
 lspconfig.lua_ls.setup({
     capabilities = capabilities,
@@ -35,7 +36,7 @@ lspconfig.bashls.setup({
 })
 
 lspconfig.clangd.setup({
-    capabilities = capabilities.offsetEncoding == { "utf-16" },
+    capabilities = clang_capabilities,
 })
 
 lspconfig.pyright.setup({

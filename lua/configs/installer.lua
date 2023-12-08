@@ -13,6 +13,9 @@ require("mason-tool-installer").setup({
         "clangd",
         "pyright",
         "html-lsp",
+        "css-lsp",
+        "json-lsp",
+        "rust-analyzer",
 
         "stylua",
         "prettier",

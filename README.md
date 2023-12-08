@@ -1,1 +1,1 @@
--   require `node`, `python`, `ripgrep`, and `nerd fonts`
+-   require `node`, `python`, `ripgrep`, `rustfmt`, and `nerd fonts`

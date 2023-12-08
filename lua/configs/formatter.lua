@@ -9,5 +9,6 @@ null_ls.setup({
         null_ls.builtins.formatting.shfmt.with({ extra_args = { "-i", 4 } }),
         null_ls.builtins.formatting.clang_format.with({ extra_args = { "-style", "Microsoft" } }),
         null_ls.builtins.formatting.black,
+        null_ls.builtins.formatting.rustfmt,
     },
 })

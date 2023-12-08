@@ -14,6 +14,8 @@ require("nvim-treesitter.configs").setup({
         "json",
         "gitignore",
         "lua",
+        "rust",
+        "toml",
         "vim",
         "vimdoc",
         "query",

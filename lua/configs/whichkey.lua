@@ -28,14 +28,14 @@ local mappings = {
     q = { "<CMD>qa<CR>", "quit" },
     x = { "<CMD>HexToggle<CR>", "hex" },
     z = { "<CMD>ZenMode<CR>", "zenmode" },
-    s = {
-        name = "info",
-        s = { "<CMD>Lspsaga outline<CR>", "outline" },
-        d = { "<CMD>Lspsaga rename<CR>", "rename" },
-        f = { "<CMD>Lspsaga peek_definition<CR>", "definition" },
-        g = { "<CMD>Lspsaga diagnostic_jump_prev<CR>", "previous" },
-        h = { "<CMD>Lspsaga diagnostic_jump_next<CR>", "next" },
-        k = { "<CMD>Lspsaga hover_doc<CR>", "doc" },
+    a = {
+        name = "languages server",
+        o = { "<CMD>Lspsaga outline<CR>", "outline" },
+        r = { "<CMD>Lspsaga rename<CR>", "rename" },
+        d = { "<CMD>Lspsaga peek_definition<CR>", "definition" },
+        k = { "<CMD>Lspsaga diagnostic_jump_prev<CR>", "previous" },
+        j = { "<CMD>Lspsaga diagnostic_jump_next<CR>", "next" },
+        p = { "<CMD>Lspsaga hover_doc<CR>", "doc" },
     },
 }
 

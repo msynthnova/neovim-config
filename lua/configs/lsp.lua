@@ -1,7 +1,13 @@
 local lspconfig = require("lspconfig")
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
-capabilities.offsetEncoding = { "utf-16" }
+local clang_cap = capabilities
+local css_cap = capabilities
+local json_cap = capabilities
+
+clang_cap.offsetEncoding = { "utf-16" }
+css_cap.textDocument.completion.completionItem.snippetSupport = true
+json_cap.textDocument.completion.completionItem.snippetSupport = true
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local lsp_formatting = function(buffer)
@@ -18,7 +24,7 @@ local on_attach = function(client, buffer)
         return
     end
 
-    print(client.name)
+    client.name = client.name
     vim.api.nvim_clear_autocmds({ group = augroup, buffer = buffer })
     vim.api.nvim_create_autocmd("BufWritePre", {
         group = augroup,
@@ -67,7 +73,7 @@ lspconfig.bashls.setup({
 
 lspconfig.clangd.setup({
     on_attach = on_attach,
-    capabilities = capabilities,
+    capabilities = clang_cap,
 })
 
 lspconfig.pyright.setup({
@@ -78,4 +84,26 @@ lspconfig.pyright.setup({
 lspconfig.html.setup({
     on_attach = on_attach,
     capabilities = capabilities,
+})
+
+lspconfig.cssls.setup({
+    on_attach = on_attach,
+    capabilities = css_cap,
+})
+
+lspconfig.jsonls.setup({
+    on_attach = on_attach,
+    capabilities = json_cap,
+})
+
+lspconfig.rust_analyzer.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+        ["rust-analyzer"] = {
+            diagnostics = {
+                enable = false,
+            },
+        },
+    },
 })

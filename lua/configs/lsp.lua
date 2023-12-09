@@ -9,6 +9,20 @@ clang_cap.offsetEncoding = { "utf-16" }
 css_cap.textDocument.completion.completionItem.snippetSupport = true
 json_cap.textDocument.completion.completionItem.snippetSupport = true
 
+vim.diagnostic.config({
+    virtual_text = false,
+    signs = true,
+    underline = false,
+    update_in_insert = false,
+    severity_sort = true,
+})
+
+local signs = { Error = "󰅚 ", Warn = "󰀪 ", Hint = "󰌶 ", Info = " " }
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local lsp_formatting = function(buffer)
     vim.lsp.buf.format({

@@ -39,7 +39,7 @@ require("cokeline").setup({
         {
             text = function(buffer)
                 if buffer.is_modified then
-                    return "   ~   "
+                    return "     "
                 else
                     return "   "
                 end

@@ -5,7 +5,12 @@ require("lazy").setup({
     { "folke/tokyonight.nvim", commit = "f247ee700b569ed43f39320413a13ba9b0aef0db" },
     { "willothy/nvim-cokeline", commit = "2e71292a37535fdbcf0f9500aeb141021d90af8b" },
     { "folke/which-key.nvim", commit = "4433e5ec9a507e5097571ed55c02ea9658fb268a" },
-    { "nvim-telescope/telescope.nvim", commit = "6213322ab56eb27356fdc09a5078e41e3ea7f3bc" },
+    { "sindrets/diffview.nvim", commit = "3dc498c9777fe79156f3d32dddd483b8b3dbd95f" },
+    {
+        "nvim-telescope/telescope.nvim",
+        commit = "6213322ab56eb27356fdc09a5078e41e3ea7f3bc",
+        dependencies = { "debugloop/telescope-undo.nvim", commit = "d3afc1c105535a90caec092ce27a113f77ba7b84" },
+    },
     { "nvimdev/lspsaga.nvim", commit = "68d42e24295b4254fdf82a8a686fcf951f8a8d9a" },
     { "nvim-treesitter/nvim-treesitter", commit = "c203884c80ef31b6a3993398734fbe008addcb27" },
     { "nvim-lualine/lualine.nvim", commit = "2248ef254d0a1488a72041cfb45ca9caada6d994" },
@@ -29,6 +34,7 @@ require("lazy").setup({
     { "lewis6991/gitsigns.nvim", commit = "6ef8c54fb526bf3a0bc4efb0b2fe8e6d9a7daed2" },
     { "nacro90/numb.nvim", commit = "3f7d4a74bd456e747a1278ea1672b26116e0824d" },
     { "kylechui/nvim-surround", commit = "633a0ab03159569a66b65671b0ffb1a6aed6cf18" },
+    { "folke/trouble.nvim", commit = "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
 
     { "williamboman/mason.nvim", commit = "41e75af1f578e55ba050c863587cffde3556ffa6" },
     { "WhoIsSethDaniel/mason-tool-installer.nvim", commit = "8b70e7f1e0a4119c1234c3bde4a01c241cabcc74" },

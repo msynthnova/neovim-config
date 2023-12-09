@@ -17,7 +17,7 @@ require("mason-tool-installer").setup({
         "json-lsp",
         "rust-analyzer",
         "yaml-language-server",
-
+        "emmet-ls",
         "stylua",
         "prettier",
         "shfmt",

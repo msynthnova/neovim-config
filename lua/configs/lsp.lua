@@ -113,3 +113,8 @@ lspconfig.yamlls.setup({
     capabilities = capabilities,
     settings = {},
 })
+
+lspconfig.emmet_ls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})

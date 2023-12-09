@@ -30,6 +30,7 @@ local mappings = {
     x = { "<CMD>HexToggle<CR>", "hex" },
     z = { "<CMD>ZenMode<CR>", "zenmode" },
     o = { "<CMD>TroubleToggle<CR>", "nvim trouble" },
+    h = { "<CMD>Glow<CR>", "preview markdown" },
     d = {
         name = "diffview",
         o = { "<CMD>DiffviewOpen<CR>", "open" },

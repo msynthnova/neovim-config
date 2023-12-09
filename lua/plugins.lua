@@ -35,6 +35,7 @@ require("lazy").setup({
     { "nacro90/numb.nvim", commit = "3f7d4a74bd456e747a1278ea1672b26116e0824d" },
     { "kylechui/nvim-surround", commit = "633a0ab03159569a66b65671b0ffb1a6aed6cf18" },
     { "folke/trouble.nvim", commit = "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
+    { "ellisonleao/glow.nvim", commit = "5b38fb7b6e806cac62707a4aba8c10c5f14d5bb5", config = true, cmd = "Glow" },
 
     { "williamboman/mason.nvim", commit = "41e75af1f578e55ba050c863587cffde3556ffa6" },
     { "WhoIsSethDaniel/mason-tool-installer.nvim", commit = "8b70e7f1e0a4119c1234c3bde4a01c241cabcc74" },

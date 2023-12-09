@@ -23,5 +23,8 @@ require("mason-tool-installer").setup({
         "shfmt",
         "clang-format",
         "black",
+
+        "yamllint",
+        "codespell",
     },
 })

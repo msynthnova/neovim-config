@@ -36,6 +36,9 @@ local mappings = {
         k = { "<CMD>Lspsaga diagnostic_jump_prev<CR>", "previous" },
         j = { "<CMD>Lspsaga diagnostic_jump_next<CR>", "next" },
         p = { "<CMD>Lspsaga hover_doc<CR>", "doc" },
+        c = { "<CMD>Lspsaga code_action<CR>", "code actions" },
+        f = { "<CMD>Lspsaga finder<CR>", "finder" },
+        t = { "<CMD>Lspsaga term_toggle<CR>", "float terminal" },
     },
 }
 

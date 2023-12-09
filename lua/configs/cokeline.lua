@@ -30,10 +30,19 @@ require("cokeline").setup({
         },
         {
             text = function(buffer)
-                return buffer.filename .. "   "
+                return buffer.filename
             end,
             bold = function(buffer)
                 return buffer.is_focused
+            end,
+        },
+        {
+            text = function(buffer)
+                if buffer.is_modified then
+                    return "   ~   "
+                else
+                    return "   "
+                end
             end,
         },
     },

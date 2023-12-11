@@ -6,6 +6,8 @@ require("tokyonight").setup({
     keywords = { italic = true },
     functions = {},
     variables = {},
+    sidebars = "transparent",
+    floats = "transparent",
   },
 })
 

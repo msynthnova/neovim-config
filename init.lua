@@ -1,5 +1,4 @@
 require("utils.bootstrap")
-require("utils.commands")
 require("utils.settings")
 
 require("plugins")

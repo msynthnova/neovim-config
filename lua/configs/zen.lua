@@ -1,5 +1,5 @@
 require("zen-mode").setup({
-    window = {
-        backdrop = 0.95,
-    },
+  window = {
+    backdrop = 0.95,
+  },
 })

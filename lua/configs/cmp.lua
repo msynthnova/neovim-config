@@ -14,9 +14,6 @@ cmp.setup({
     end,
     ["<CR>"] = cmp.mapping.confirm({ select = false }),
   },
-  experimental = {
-    ghost_text = true,
-  },
   sources = cmp.config.sources({
     { name = "nvim_lsp" },
     { name = "vsnip" },

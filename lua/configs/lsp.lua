@@ -23,17 +23,9 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 Format = function(buffer)
-  vim.api.nvim_clear_autocmds({ group = augroup, buffer = buffer })
-  vim.api.nvim_create_autocmd("BufWritePre", {
-    group = augroup,
-    buffer = buffer,
-    callback = function()
-      vim.lsp.buf.format({
-        bufnr = buffer,
-      })
-    end,
+  vim.lsp.buf.format({
+    bufnr = buffer,
   })
 end
 
@@ -48,7 +40,7 @@ local on_attach = function(client, buffer)
   Format(buffer)
 end
 
-vim.cmd("command! Format lua Format()")
+vim.cmd("command! F lua Format()")
 
 lspconfig.lua_ls.setup({
   on_attach = on_attach,

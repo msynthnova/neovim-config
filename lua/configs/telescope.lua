@@ -1,3 +1,5 @@
+local actions = require("telescope.actions")
+
 require("telescope").setup({
   extensions = {
     undo = {},
@@ -8,6 +10,11 @@ require("telescope").setup({
       height = 0.95,
       prompt_position = "bottom",
       preview_height = 0.60,
+    },
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close,
+      },
     },
     layout_strategy = "vertical",
   },

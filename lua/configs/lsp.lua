@@ -40,7 +40,7 @@ local on_attach = function(client, buffer)
   Format(buffer)
 end
 
-vim.cmd("command! F lua Format()")
+vim.cmd("command! Format lua Format()")
 
 lspconfig.lua_ls.setup({
   on_attach = on_attach,

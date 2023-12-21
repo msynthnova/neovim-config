@@ -8,6 +8,7 @@ local opts = {
 
 local keymap = vim.keymap.set
 keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
 
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
@@ -29,6 +30,8 @@ local mappings = {
   z = { "<CMD>ZenMode<CR>", "zenmode" },
   o = { "<CMD>TroubleToggle<CR>", "nvim trouble" },
   h = { "<CMD>Glow<CR>", "preview markdown" },
+
+  k = { "<CMD>lua vim.lsp.buf.format()<CR>", "format" },
 
   d = {
     name = "diffview",

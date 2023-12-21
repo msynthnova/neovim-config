@@ -23,12 +23,6 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
-Format = function(buffer)
-  vim.lsp.buf.format({
-    bufnr = buffer,
-  })
-end
-
 local on_attach = function(client, buffer)
   if not buffer then
     return
@@ -37,10 +31,7 @@ local on_attach = function(client, buffer)
   if client.name == "tsserver" then
     client.resolved_capabilities.document_formatting = false
   end
-  Format(buffer)
 end
-
-vim.cmd("command! Format lua Format()")
 
 lspconfig.lua_ls.setup({
   on_attach = on_attach,

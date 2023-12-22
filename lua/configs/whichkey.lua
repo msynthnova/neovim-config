@@ -31,7 +31,7 @@ local mappings = {
   o = { "<CMD>TroubleToggle<CR>", "nvim trouble" },
   h = { "<CMD>Glow<CR>", "preview markdown" },
 
-  k = { "<CMD>lua vim.lsp.buf.format()<CR>", "format" },
+  s = { "<CMD>lua vim.lsp.buf.format()<CR><CMD>w<CR>", "format, save" },
 
   d = {
     name = "diffview",

@@ -1,1 +1,0 @@
-- require `node`, `python`, `ripgrep`, `glow`, `xxd`, and `nerd fonts`
